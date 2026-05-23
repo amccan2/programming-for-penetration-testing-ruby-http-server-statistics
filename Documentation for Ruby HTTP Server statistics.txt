@@ -1,0 +1,28 @@
+<This is a manpage-like template for your documentation. Replace the stuff in angle brackets with your own information, and remove the angle brackets.>
+
+CPSC 42700 Project 4: Ruby HTTP Server Statistics
+Aidan McCann
+4/10/2026
+
+NAME
+    serverstats.rb
+
+USAGE
+    The command line syntax is  ruby serverstats.rb <hosts_file> and  <hosts_file> is a text file containing a list of website hostnames, one per line. Also, the program reads this file and analyzes each server.
+
+
+DESCRIPTION
+    The purpose of this program is The purpose of the program is to analyze web servers from a list and identify what type of server they are using, such as Apache, IIS, Nginx, or LiteSpeed, and see if they use cookies. The function of the program is to read the webservers.txt file with 15 websites in it and three of them which are fake websites and send HTTP requests to collect data from the websites. Ahen it uses class objects to query the domains' web servers, and computes and prints out summary statistics about the servers. Then the program checks each server to determine which server is being used and whether cookies are set. The program keeps track of totals for each category and calculates percentages, then it displays the results. The output the program will give is a summary of the results after checking all the websites. It displays the total number of hosts that were successfully processed and how many failed. Then it shows the number and percentage of servers running Apache, IIS, Nginx, and LiteSpeed, along with servers categorized as Other. The output also includes how many servers set cookies and the percentage of those servers.
+
+COMMAND-LINE OPTIONS
+    The program is ran from the Kali Linux terminal command line by typing in ruby serverstats.rb webservers.txt. Then the ruby command starts the Ruby program and serverstats.rb is the script being executed. The webservers.txt argument is the input file that contains a list of website hostnames and the program reads this file and checks each host to gather server information such as Apache, IIS, Nginx, or LiteSpeed, and cookies.
+
+INPUT FILE FORMAT
+    For the input file that was used for this program it's named webservers.txt and inside webservers.txt is a list of 15 webservers going top to bottom and three of them are fake webservers that don't work. The three webservers that don't work are www.gorgle.corm, www.333.con and www.12345.con the rest of the webservers in webservers.txt file work. When running the program you would type ruby serverstats.rb webserver.txt inside of kali VM terminal with the files on the desktop. The program reads the webservers.txt file, which contains a list of website that are one per line and it then sends an HTTP request to each server and collects information such as whether the server is Apache, IIS, Nginx, or LiteSpeed, as well as whether cookies are present. After all hosts are checked, the program outputs the total counts and percentages for each server type.
+
+KNOWN BUGS AND LIMITATIONS
+
+There is no known bugs or issues with this program and it works without errors.
+
+ADDITIONAL NOTES
+   There is none it runs how it's suppose to.
